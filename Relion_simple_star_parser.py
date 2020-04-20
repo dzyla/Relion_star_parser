@@ -5,6 +5,8 @@ from gemmi import cif
 '''
 A simple STAR file parser based on the gemmi library.
 
+Script written by Dawid Zyla, ETH Zurich.
+
 For now script allows to plot selected columns and convert Relion 3.1 star files to 3.0. Outside the CLI there is possibility to
 modify STAR file by removing columns, modifying column or filtering rows based on selected values. This however has to be done manually for now. 
 
