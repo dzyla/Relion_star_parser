@@ -47,6 +47,7 @@ def save_star_31(dataframe_optics, dataframe_particles, filename='out.star'):
     out_particles = out_doc.add_new_block('optics', pos=-1)
 
     # Row number is required for the column names to save the STAR file e.g. _rlnNrOfSignificantSamples #33
+    dataframe_optics = pd.DataFrame.from_dict(dataframe_optics)
     column_names = dataframe_optics.columns
     column_names_to_star = []
     for n, name in enumerate(column_names):
